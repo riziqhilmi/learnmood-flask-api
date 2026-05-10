@@ -134,7 +134,7 @@ def predict_daily():
         mood_encoded,
         durasi_belajar,
         durasi_tidur
-        ]], columns=['mood_encoded', 'durasi_belajar', 'durasi_tidur'])
+        ]], columns=['mood', 'durasi_belajar', 'durasi_tidur'])
         
         prediction = model.predict(features)
         label = encoder_label.inverse_transform(prediction)[0]
